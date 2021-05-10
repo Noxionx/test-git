@@ -1,0 +1,356 @@
+╭─  |  ~/test-git ······················································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:42:01  
+╰─ git init
+Initialized empty Git repository in /home/noxionx/test-git/.git/
+
+╭─  |  ~/test-git |   master ·········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:42:14  
+╰─ ls .git
+branches  config  description  HEAD  hooks  info  objects  refs
+
+╭─  |  ~/test-git |   master ·········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:42:26  
+╰─ git statu
+git: 'statu' is not a git command. See 'git --help'.
+
+The most similar commands are
+	status
+	stage
+	stash
+
+╭─  |  ~/test-git |   master ········································································ 1 ↵ | kubernetes-admin@kubernetes ⎈ | 21:43:01  
+╰─ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+╭─  |  ~/test-git |   master ·········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:43:02  
+╰─ nano README.md
+
+╭─  |  ~/test-git |   master ?1 ······························································· ✔ | 16s  | kubernetes-admin@kubernetes ⎈ | 21:43:57  
+╰─ cat README.md 
+# TEST
+
+╭─  |  ~/test-git |   master ?1 ······································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:44:01  
+╰─ ls 
+README.md
+
+╭─  |  ~/test-git |   master ?1 ······································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:44:05  
+╰─ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+╭─  |  ~/test-git |   master ?1 ······································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:44:09  
+╰─ git add README.md 
+
+╭─  |  ~/test-git |   master +1 ······································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:44:42  
+╰─ 
+
+╭─  |  ~/test-git |   master +1 ······································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:44:47  
+╰─ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   README.md
+
+
+╭─  |  ~/test-git |   master +1 ······································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:44:50  
+╰─ git commit -m":tada: Initial commit"
+[master (root-commit) c8ac6d5] :tada: Initial commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+╭─  |  ~/test-git |   master ·········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:47:31  
+╰─ git status
+On branch master
+nothing to commit, working tree clean
+
+╭─  |  ~/test-git |   master ·········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:47:44  
+╰─ git log
+
+╭─  |  ~/test-git |   master ·································································· ✔ | 28s  | kubernetes-admin@kubernetes ⎈ | 21:51:46  
+╰─ nano README-2.md
+
+╭─  |  ~/test-git |   master ?1 ································································ ✔ | 5s  | kubernetes-admin@kubernetes ⎈ | 21:52:18  
+╰─ cat README-2.md 
+# TOTO
+
+╭─  |  ~/test-git |   master ?1 ······································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:52:26  
+╰─ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README-2.md
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+╭─  |  ~/test-git |   master ?1 ······································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:52:30  
+╰─ nano README.md 
+
+╭─  |  ~/test-git |   master !1 ?1 ····························································· ✔ | 7s  | kubernetes-admin@kubernetes ⎈ | 21:53:26  
+╰─ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	README-2.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+╭─  |  ~/test-git |   master !1 ?1 ···································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:53:29  
+╰─ git README-2.md
+git: 'README-2.md' is not a git command. See 'git --help'.
+
+╭─  |  ~/test-git |   master !1 ?1 ·································································· 1 ↵ | kubernetes-admin@kubernetes ⎈ | 21:54:02  
+╰─ git add README-2.md
+
+╭─  |  ~/test-git |   master +1 !1 ···································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:54:07  
+╰─ git statusd
+git: 'statusd' is not a git command. See 'git --help'.
+
+The most similar command is
+	status
+
+╭─  |  ~/test-git |   master +1 !1 ·································································· 1 ↵ | kubernetes-admin@kubernetes ⎈ | 21:54:10  
+╰─ git status 
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	new file:   README-2.md
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+
+╭─  |  ~/test-git |   master +1 !1 ···································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:54:11  
+╰─ git commit -m"Add RE" 
+[master 14ecd95] Add RE
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README-2.md
+
+╭─  |  ~/test-git |   master !1 ······································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:54:41  
+╰─ git commit -m"Add README" 
+
+╭─  |  ~/test-git |   master !1 ··································································· INT ↵ | kubernetes-admin@kubernetes ⎈ | 21:54:45  
+╰─ 
+
+╭─  |  ~/test-git |   master !1 ··································································· INT ↵ | kubernetes-admin@kubernetes ⎈ | 21:54:46  
+╰─ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+╭─  |  ~/test-git |   master !1 ······································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:54:54  
+╰─ git log
+
+╭─  |  ~/test-git |   master !1 ································································ ✔ | 4s  | kubernetes-admin@kubernetes ⎈ | 21:55:00  
+╰─ git commit --amend
+[master dde295b] Add README-2.md
+ Date: Mon May 10 21:54:41 2021 +0200
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README-2.md
+
+╭─  |  ~/test-git |   master !1 ······························································· ✔ | 42s  | kubernetes-admin@kubernetes ⎈ | 21:55:54  
+╰─ git log
+
+╭─  |  ~/test-git |   master !1 ································································ ✔ | 6s  | kubernetes-admin@kubernetes ⎈ | 21:56:02  
+╰─ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+╭─  |  ~/test-git |   master !1 ······································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:56:25  
+╰─ git diff
+
+╭─  |  ~/test-git |   master !1 ···························································· ✔ | 1m 41s  | kubernetes-admin@kubernetes ⎈ | 21:58:11  
+╰─ git checkout -b modif
+
+╭─  |  ~/test-git |   master !1 ··································································· INT ↵ | kubernetes-admin@kubernetes ⎈ | 21:58:56  
+╰─ git branch modif
+
+╭─  |  ~/test-git |   master !1 ······································································· ✔ | kubernetes-admin@kubernetes ⎈ | 21:59:07  
+╰─ git checkout modif
+M	README.md
+Switched to branch 'modif'
+
+╭─  |  ~/test-git |   modif !1 ········································································ ✔ | kubernetes-admin@kubernetes ⎈ | 21:59:14  
+╰─ git log
+
+╭─  |  ~/test-git |   modif !1 ································································ ✔ | 41s  | kubernetes-admin@kubernetes ⎈ | 22:00:23  
+╰─ git add README.md 
+
+╭─  |  ~/test-git |   modif +1 ········································································ ✔ | kubernetes-admin@kubernetes ⎈ | 22:00:35  
+╰─ git status
+On branch modif
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   README.md
+
+
+╭─  |  ~/test-git |   modif +1 ········································································ ✔ | kubernetes-admin@kubernetes ⎈ | 22:00:48  
+╰─ git commit -m"Modif README.md"
+[modif 89014f8] Modif README.md
+ 1 file changed, 2 insertions(+)
+
+╭─  |  ~/test-git |   modif ··········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 22:03:28  
+╰─ git log
+
+╭─  |  ~/test-git |   modif ··································································· ✔ | 52s  | kubernetes-admin@kubernetes ⎈ | 22:04:22  
+╰─ 
+
+╭─  |  ~/test-git |   modif ··········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 22:04:30  
+╰─ git status
+On branch modif
+nothing to commit, working tree clean
+
+╭─  |  ~/test-git |   modif ··········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 22:04:58  
+╰─ ls
+README-2.md  README.md
+
+╭─  |  ~/test-git |   modif ··········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 22:05:06  
+╰─ cat README
+cat: README: No such file or directory
+
+╭─  |  ~/test-git |   modif ········································································· 1 ↵ | kubernetes-admin@kubernetes ⎈ | 22:05:11  
+╰─ cat README-2.md 
+# TOTO
+
+╭─  |  ~/test-git |   modif ··········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 22:05:16  
+╰─ cat README.md 
+# TEST
+
+## TATA
+
+╭─  |  ~/test-git |   modif ··········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 22:05:26  
+╰─ git log
+
+╭─  |  ~/test-git |   modif ···································································· ✔ | 4s  | kubernetes-admin@kubernetes ⎈ | 22:05:44  
+╰─ git checkout master
+Switched to branch 'master'
+
+╭─  |  ~/test-git |   master ·········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 22:05:56  
+╰─ cat README.md
+# TEST
+
+╭─  |  ~/test-git |   master ·········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 22:06:00  
+╰─ git merge modif --ff 
+Updating dde295b..89014f8
+Fast-forward
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+╭─  |  ~/test-git |   master ·········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 22:09:27  
+╰─ cat README.md
+# TEST
+
+## TATA
+
+╭─  |  ~/test-git |   master ·········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 22:09:43  
+╰─ git log
+
+╭─  |  ~/test-git |   master ··································································· ✔ | 7s  | kubernetes-admin@kubernetes ⎈ | 22:09:55  
+╰─ git branch -d modif 
+Deleted branch modif (was 89014f8).
+
+╭─  |  ~/test-git |   master ·········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 22:10:05  
+╰─ git branch -D modif
+
+╭─  |  ~/test-git |   master ······································································ INT ↵ | kubernetes-admin@kubernetes ⎈ | 22:10:39  
+╰─ ^[[200~git remote add origin git@github.com:Noxionx/test-git.git 
+
+╭─  |  ~/test-git |   master ······································································ INT ↵ | kubernetes-admin@kubernetes ⎈ | 22:34:10  
+╰─ 
+
+╭─  |  ~/test-git |   master ······································································ INT ↵ | kubernetes-admin@kubernetes ⎈ | 22:34:11  
+╰─ git remote add origin git@github.com:Noxionx/test-git.git
+
+╭─  |  ~/test-git |   master ·········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 22:34:12  
+╰─ git remote list 
+error: Unknown subcommand: list
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --verbose         be verbose; must be placed before a subcommand
+
+
+╭─  |  ~/test-git |   master ······································································ HUP ↵ | kubernetes-admin@kubernetes ⎈ | 22:34:30  
+╰─ git remote show     
+origin
+
+╭─  |  ~/test-git |   master ·········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 22:34:39  
+╰─ git remote show origin 
+Warning: No xauth data; using fake authentication data for X11 forwarding.
+X11 forwarding request failed on channel 0
+* remote origin
+  Fetch URL: git@github.com:Noxionx/test-git.git
+  Push  URL: git@github.com:Noxionx/test-git.git
+  HEAD branch: (unknown)
+
+╭─  |  ~/test-git |   master ·········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 22:35:13  
+╰─ git push                       
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin master
+
+
+╭─  |  ~/test-git |   master ······································································ 128 ↵ | kubernetes-admin@kubernetes ⎈ | 22:37:22  
+╰─ git push --set-upstream origin master
+Warning: No xauth data; using fake authentication data for X11 forwarding.
+X11 forwarding request failed on channel 0
+Enumerating objects: 9, done.
+Counting objects: 100% (9/9), done.
+Delta compression using up to 6 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (9/9), 739 bytes | 739.00 KiB/s, done.
+Total 9 (delta 0), reused 0 (delta 0)
+To github.com:Noxionx/test-git.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+╭─  |  ~/test-git |   master ·········································································· ✔ | kubernetes-admin@kubernetes ⎈ | 23:09:25  
+╰─       
